@@ -1,0 +1,437 @@
+/**
+ * @project 623
+ * @package sftheme
+ * @site app1
+ */
+
+
+/**
+ * ------------------------------------------------------------------
+ * @section typography
+ * ------------------------------------------------------------------
+ */
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+h1 {font-size:3em;line-height:1;margin-bottom:0.5em;}
+h2 {font-size:2em;margin-bottom:0.75em;}
+h3 {font-size:1.5em;line-height:1;margin-bottom:1em;}
+h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
+h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+h6 {font-size:1em;font-weight:bold;}
+p, form {margin:0 0 1.5em;padding:0;}
+blockquote {margin:1.5em;}
+sup, sub {line-height:0;}
+address {margin:0 0 1.5em;}
+pre, code {margin:1.5em 0;white-space:pre;}
+pre, code, tt {line-height:1.5;}
+li ul, li ol {margin:0 2.5em;padding:0;}
+ul, ol {margin:0 1.5em 1.5em 3em;padding:0;}
+dl {margin:0 0 1.5em 0;}
+dd {margin-left:1.5em;}
+caption {margin:0; padding:.5em;}
+
+/**
+ * ------------------------------------------------------------------
+ * @section general
+ * ------------------------------------------------------------------
+ */
+body {
+  background-color:#333333;
+  font-family:georgia,serif;
+  font-size:14px;
+  margin:0;
+  padding: 0 0 25px 0;
+}
+
+a:link {
+  text-decoration:none;
+  font-weight:bold;
+}
+
+a:visited {
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+.sf_outer_wrapper {
+	background-color:#333333;
+	background-image:url(images/623_bg.gif);
+	background-position:0 0;
+	background-repeat:repeat;
+	margin:0 auto;
+	width:900px;
+}
+
+/**
+ * ------------------------------------------------------------------
+ * @section header
+ * ------------------------------------------------------------------
+ */
+.sf_header_wrapper {
+	background-color:#333333;
+	background-position:0 0;
+	background-repeat: no-repeat;
+	height:107px;
+}
+
+.sf_header_wrapper:after {
+	content: " ";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	font-height: 1px;
+	margin:0px;
+	padding:0px;
+}
+
+.sf_extra2 {
+		background-position:0 50%;
+	background-repeat: no-repeat;
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+	height:66px;
+	width:100px;
+}
+
+.sf_main_header {
+	color:#ffffff;
+	display:inline;
+	float:left;
+	font-family:arial,helvetica,sans-serif;
+	font-size:26px;
+	font-weight:600;
+	height:66px;
+	margin-top:20px;
+	overflow:hidden;
+
+	min-width:760px; /* ie7 & ff */
+	width:740px; /* ie6 */
+	margin-right:20px;
+}
+
+.sf_sub_header {
+	display:none;
+}
+
+.sf_main_header p, .sf_sub_header p {
+	margin:0px;
+	padding:0px;
+}
+
+.sf_extra4 {
+	background-color:#333333;
+	background-image:url(images/623_main.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display:inline;
+	float:right;
+	height:250px;
+	width:685px;
+}
+
+/**
+ * --------------------------------------------------------
+ * @section navigation
+ * --------------------------------------------------------
+ */
+.sf_navigation h3.widget_header {
+	display:none;
+}
+
+.sf_navigation{
+	background-color:#938d76;
+	float:left;
+	padding:13px 0;
+	width:215px;
+
+	/* Min-height fast hack */
+	min-height:224px;
+	height:auto !important;
+	height:224px;
+	/* End min-height fast hack */
+}
+
+.sf_navigation ul {
+	background:url(images/623_navbg.jpg) 100% 0 repeat-y;
+	border-top:1px solid #333333;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.sf_navigation ul li {
+	border-bottom:1px solid #333333;
+	border-top:1px solid #ffffff;
+}
+
+.sf_navigation ul li.sf_last_nav_item {
+
+}
+
+.sf_navigation ul li.sf_first_nav_item {
+
+}
+
+.sf_navigation ul li a {
+	background-image:url(images/623_bullet.jpg);
+	background-position: 26px 11px;
+	background-repeat: no-repeat;
+	color:#333333;
+	display:block;
+	width:155px;
+	font-family:arial,helvetica,sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	padding:11px 7px 11px 53px;
+	text-decoration:none;
+}
+
+.sf_navigation ul li a:visited {
+	color:#333333;
+}
+
+.sf_navigation ul li a:hover{
+	color:#333333;
+	background-color:#fffcee;
+}
+
+/**
+ * @subsection flyout
+ */
+#Nav1 iframe {
+	position: absolute;
+	/* account for the border */
+	left: -0.25em;
+	top: -0.25em;
+	z-index: 0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+	margin-left: 3px;
+}
+.sf_subnavigation, .sf_subnavigation2 {
+	display:none;
+}
+
+#Nav1 li ul {
+	position:absolute;
+	left: -999em;
+	width:140px;
+	border:none;
+	background:#aba489;
+	padding:1px 1px 0px 1px;
+	margin:-39px 0 0 165px;
+	z-index:1000;
+}
+#Nav1 li a {
+	display : block;
+}
+#Nav1 li ul li {
+	margin:0;
+	padding:0;
+	float:left;
+	border:none;
+}
+#Nav1 li ul li a {
+	display : block;
+	color:#fffcee;
+	background-image:none;
+	background:#938d76;
+	width:126px;
+	height:auto;
+	padding:11px 7px;
+	white-space:normal;
+	margin:0 0 1px 0;
+}
+#Nav1 li ul li a:hover {
+	color:#ffffff;
+	background:#aba489;
+}
+
+#Nav1 li:hover ul,
+#Nav1 li.sfhover ul {
+	left: auto;
+}
+
+#Nav1 li:hover, #Nav1 li.hover {
+    position: static;
+}
+
+#Nav1 .sf_last_nav_item_subnav {
+  margin:0;
+}
+
+/**
+ * ------------------------------------------------------------------
+ * @section page title
+ * ------------------------------------------------------------------
+ */
+.sf_region5 {
+	color:#FFFFFF;
+	display:block;
+	float: right;
+	font-family:arial,helvetica,sans-serif;
+	font-size:22px;
+	margin-top:-50px;
+	padding-right:15px;
+	text-align:right;
+	width:645px;
+}
+
+.sf_pagetitle h1 {
+	font-size:22px;
+	margin: 0;
+	font-weight: normal;
+}
+
+.sf_region5 div, .sf_region5 p {
+	padding:0;
+	margin:0;
+}
+
+/**
+ * ------------------------------------------------------------------
+ * @section content
+ * ------------------------------------------------------------------
+ */
+
+.sf_region4 {
+	float:left;
+}
+
+.sf_content {
+	display:inline;
+	float: right;
+  	margin:10px 30px 10px 0;
+  	width:600px;
+}
+
+/**
+ * ------------------------------------------------------------------
+ * @section widgets
+ * ------------------------------------------------------------------
+ */
+.widgetset{
+	clear:left;
+	float:left;
+	margin:-13px 10px 0;
+	padding:20px 0 10px;
+	width:195px;
+	display:inline;
+}
+
+div.widgetset .widget {
+	background-color:#AFAB99;
+	margin-bottom:15px;
+	padding-bottom:5px;
+}
+
+div.widgetset .widget_content {
+	padding:0;
+	margin:0 10px 10px;
+	width:175px;
+}
+
+.sf_region7 {
+	clear:right;
+}
+
+div.widgetset .form_item {
+	margin-bottom:5px;
+}
+
+div.widgetset label {
+	display:block;
+}
+
+div.widgetset .widget h3 {
+	background-color:#C1BEB0;
+	padding:5px;
+	margin:0 0 10px;
+}
+
+div.widgetset h3, div.widgetset h3 a {
+	font-family:arial,helvetica,sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	color:#000;
+}
+
+div.widgetset ul, div.widgetset ol {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+div.widgetset li {
+	margin-bottom:3px;
+}
+
+/**
+ * ------------------------------------------------------------------
+ * @section footer
+ * ------------------------------------------------------------------
+ */
+.sf_footer {
+	background-position:0 0;
+	background-repeat: no-repeat;
+	clear:both;
+	color:#ffffff;
+	padding:15px 25px;
+	font-family:arial,helvetica,sans-serif;
+	text-align:center;
+	width:850px
+}
+
+.sf_footer p{
+	margin:0px;
+	padding:0px;
+}
+
+
+.sf_footer a:link,
+.sf_footer a:visited,
+.sf_footer a:hover {
+	color:#ffffff;
+}
+
+/**
+ * ------------------------------------------------------------------
+ * @section misc
+ * ------------------------------------------------------------------
+ */
+
+.sf_banner {
+	margin:25px auto 0;
+	text-align:center;
+  	width:900px;
+}
+
+.sf_banner img {
+
+}
+
+.sf_banner a,.sf_banner a:link {
+	color:#cccccc;
+}
+
+.sf_banner a:visited {
+	color:#cccccc;
+}
+
+.sf_banner a:hover {
+	color:#cccccc;
+}
+
+/**
+ * Sticking flyout menu bug
+ *
+ * @bugfix
+ * @affected ie7
+ * @css-for ie7
+ * @valid yes
+ */
+#Nav1 li:hover, #Nav1 li.hover {
+    position: static;
+}

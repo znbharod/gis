@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Database Design</title>
+<meta name="description" content="Home Page"/>
+<meta property="og:title" content="Database Design"/>
+<meta name="title" content="Database Design"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="http://bharodia.me/Database_Design.html"/>
+<meta property="og:image" content="http://bharodia.me/images/30208270.png"/>
+<meta property="og:image" content="http://bharodia.me/images/TemplateThumbnail.jpg"/>
+<meta property="og:site_name" content="bharodia"/>
+<meta property="og:description" content="Check out http://bharodia.me!  Home Page"/>
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+<meta http-equiv='Content-Location' content='Database_Design.html' />
+<meta name="generator" content="Starfield Technologies; WebSite Tonight v5.2.1"/>
+<style type="text/css">
+body { margin:0; padding:0; }
+</style>
+	<script type='text/javascript' src='scripts/Wce6d2746ee82f.js'></script>
+	<script type='text/javascript'>
+		MM_preloadImages('images/30208270.png');
+		MM_preloadImages('images/30633452.png');
+		MM_preloadImages('images/32422034.png');
+
+	</script>
+
+
+
+
+
+	<script type='text/javascript' src='scripts/Wc154336d0272b.js'></script>
+
+
+
+    <link rel='stylesheet' type='text/css' id='layout1.css' href='Wcc02fe00a3cf8.css' />
+    <link rel='stylesheet' type='text/css' id='theme.css' href='Wc57265438921b.css' />
+    <link rel='stylesheet' type='text/css' id='color_1.css' href='Wc19f7f559628a.css' />
+    <link rel='stylesheet' type='text/css' id='custom.css' href='Wc72afeb1d1546.css' />
+    
+</head>
+<body id='page_bf91e87c-e168-4e48-ade4-d9facf4d128c' >
+<div class="sf_outer_wrapper">
+	<div class="sf_region1">
+		
+	</div>
+	<div class="sf_extra1"><span></span></div>
+	<div class="sf_wrapper"><div style='display:block;overflow:visible;margin:0;padding:0;'><div class='sf_undocked' style='display:block;height:0;position:absolute;margin:0;padding:0;overflow:visible;width:0;top:0;z-index:999998;left:auto;'>
+</div></div>
+
+		<div class="sf_region2">
+			
+		</div>
+		<div class="sf_extra10"><span></span></div>
+		<div class="sf_header_wrapper">
+			<div class="sf_extra2"><span></span></div>
+			<div class="sf_region3">
+				<div class="sf_main_header" ><div style="display:block;" ><font face="Arial, Helvetica, sans-serif">Geospatial Information Science and Technology
+</font>
+<div><font style="font-size: 14px; ">GIS 550 - Geospatial Data Structure and Web Services</font></div></div></div>
+			</div>
+			<div class="sf_extra3"><span></span></div>
+		</div>
+		<div class="sf_extra4"><span></span></div>
+		<div class="sf_region4">
+			<div class="sf_navigation" ><div class="widget main_nav"><h3 class="widget_header"><span>Main Navigation</span></h3><div class="widget_content"><div style="display:block;" >
+<ul id="Nav1" class="nav">
+<li class=" sf_first_nav_item"><a href="Home_Page.html" target="_self" onclick="">Home Page</a></li>
+<li class="active-nav"><a href="Database_Design.html" target="_self" onclick="">Database Design</a></li>
+<li class=""><a href="Structured_Query_Languag.html" target="_self" onclick="">Structured Query Languag</a></li>
+<li class=""><a href="Geodatabase_Design.html" target="_self" onclick="">Geodatabase Design</a></li>
+<li class=""><a href="Commercial_Web_Delivery.html" target="_self" onclick="">Commercial Web Delivery</a></li>
+<li class=""><a href="Open_Source_GIS.html" target="_self" onclick="">Open Source GIS</a></li>
+<li class=" sf_last_nav_item"><a href="Capstone_Project.html" target="_self" onclick="">Capstone Project</a></li>
+</ul>
+</div></div></div></div>
+		</div>
+		<div class="sf_extra5"><span></span></div>
+		<div class="sf_region5">
+			<div class="sf_pagetitle" ><div style="display:block;" ><font style="font-size: 18px; font-style: normal; font-weight: bold; font-family: arial, helvetica, sans-serif; "><font color="#ffffff">Database Design</font></font><br /></div></div>
+		</div>
+		<div class="sf_extra6"><span></span></div>
+		<div class="sf_extra11"><span></span></div>
+		<div class="sf_main_wrapper">
+			<div class="sf_main">
+				<div class="sf_region6">
+					<div class="sf_content" ><div style="display:block;zoom:1" ><div id="content1"><div style="display:block;" ><div style="display:block;" ><div>
+<div style="text-align: justify; font-style: normal; font-family: georgia, serif; color: #000000; font-size: 12px; font-weight: normal;"><span style="color: #060a57; font-size: 10px;"><font color="#000000" face="Georgia, serif" style="font-size: 13px;">The Database design is a process of developing a data model using data modeling concepts. The logical database design is a process of constructing a data model of information used on a specific data model but independent of physical considerations. The physical database design covers all required parameters to generate Data Definition Language (DDL) which will be used to create database. Here database design concept is explained with following topics:</font></span></div>
+<div style="text-align: justify; font-style: normal; font-family: georgia, serif; color: #000000; font-size: 12px; font-weight: normal;"><span style="color: #060a57; font-size: 10px;"><font face="Georgia, serif" style="font-size: 13px;"><br />
+<font color="#000000" style="font-size: 13px;"></font></font></span></div>
+<div style="text-align: justify; font-style: normal; font-family: georgia, serif; color: #000000; font-size: 12px; font-weight: normal;"><span style="font-family: georgia, serif; color: #060a57; font-size: 13px;"><span><font color="#000000" style="font-size: 13px;">&#160;&#160;&#160;&#160;Entity-Relationship Diagrams (ER Diagrams)</font></span></span></div>
+<div style="text-align: justify; font-style: normal; font-weight: normal;"><font color="#000000" style="font-size: 13px;"></font></div>
+<div style="text-align: justify; font-style: normal; font-family: georgia, serif; color: #000000; font-size: 12px; font-weight: normal;"><span style="color: #060a57; font-size: 10px;"><font color="#000000" face="Georgia, serif" style="font-size: 13px;">&#160;&#160;&#160;&#160;Unified Modeling Language Diagrams with CASE Tools</font></span></div>
+<div style="text-align: justify; font-style: normal; font-family: georgia, serif; color: #000000; font-size: 12px; font-weight: normal;"><span style="color: #060a57; font-size: 10px;"><font color="#000000" face="Georgia, serif" style="font-size: 13px;">&#160;&#160;&#160;&#160;Cardinality concepts</font></span></div>
+<div style="text-align: justify; font-style: normal; font-family: georgia, serif; color: #000000; font-size: 12px; font-weight: normal;"><span style="color: #060a57; font-size: 10px;"><font color="#000000" face="Georgia, serif" style="font-size: 13px;">&#160;&#160;&#160;&#160;Relationship properties and referential integrity</font></span></div>
+<div style="text-align: justify; font-style: normal; font-family: georgia, serif; color: #000000; font-size: 12px; font-weight: normal;"><span style="color: #060a57; font-size: 10px;"><font face="Georgia, serif" style="font-size: 13px;"><span class="Apple-tab-span" style="white-space: pre; font-weight: bold;"></span><font color="#000000" style="font-size: 13px;">&#160;&#160;&#160;&#160;Cardinality</font></font></span></div>
+<div style="text-align: justify; font-style: normal; font-family: georgia, serif; color: #000000; font-size: 12px; font-weight: normal;"><span style="color: #060a57; font-size: 10px;"><font face="Georgia, serif" style="font-size: 13px;"><span class="Apple-tab-span" style="white-space: pre; font-weight: bold;"></span><font color="#000000" style="font-size: 13px;">&#160;&#160;&#160;&#160;Primary keys</font></font></span></div>
+<div style="text-align: justify; font-style: normal; font-family: georgia, serif; color: #000000; font-size: 12px; font-weight: normal;"><span style="color: #060a57; font-size: 10px;"><font face="Georgia, serif" style="font-size: 13px;"><span class="Apple-tab-span" style="white-space: pre; font-weight: bold;"></span><font color="#000000" style="font-size: 13px;">&#160;&#160;&#160;&#160;Foreign keys</font></font></span></div>
+<div style="text-align: justify; font-style: normal; font-family: georgia, serif; color: #000000; font-size: 12px; font-weight: normal;"><span style="color: #060a57; font-size: 10px;"><font color="#000000" face="Georgia, serif" style="font-size: 13px;">&#160;&#160;&#160;&#160;Table properties</font></span></div>
+<div style="text-align: justify; font-style: normal; font-family: georgia, serif; color: #000000; font-size: 12px; font-weight: normal;"><span style="color: #060a57; font-size: 10px;"><font face="Georgia, serif" style="font-size: 13px;"><span class="Apple-tab-span" style="white-space: pre; font-weight: bold;"></span><font color="#000000" style="font-size: 13px;">&#160;&#160;&#160;&#160;Primary key (simple or composite)</font></font></span></div>
+<div style="text-align: justify; font-style: normal; font-family: georgia, serif; color: #000000; font-size: 12px; font-weight: normal;"><span style="color: #060a57; font-size: 10px;"><font face="Georgia, serif" style="font-size: 13px;"><span class="Apple-tab-span" style="white-space: pre; font-weight: bold;"></span><font color="#000000" style="font-size: 13px;">&#160;&#160;&#160;&#160;Data types and properties</font></font></span></div>
+<div style="text-align: justify; font-style: normal; font-family: georgia, serif; color: #000000; font-size: 12px; font-weight: normal;"><span style="color: #060a57; font-size: 10px;"><font color="#000000" face="Georgia, serif" style="font-size: 13px;">&#160;&#160;&#160;&#160;Data Definition Language (DDL)</font></span></div>
+<div style="text-align: justify; font-style: normal; font-family: georgia, serif; color: #000000; font-size: 12px; font-weight: normal;"><span style="color: #060a57; font-size: 10px;"><font color="#000000" face="Georgia, serif" style="font-size: 13px;">&#160;&#160;&#160;&#160;Populated tabular database</font></span></div>
+</div>
+<br />
+<br /></div><div style="display:block;" ><div>
+<div style="text-align: justify; font-size: 12px;"><span style="color: #060a57; font-size: 10px;"><font color="#000000" face="Georgia, serif" style="font-size: 14px;"><b><u>Entity-Relationship Diagrams (ER Diagrams)</u></b></font></span></div>
+<div style="text-align: justify; font-size: 12px;"><span style="color: #060a57; font-size: 10px;"><font face="Georgia, serif" style="font-size: 14px;"><b><u><br />
+<font color="#000000"></font></u></b></font></span></div>
+<div style="text-align: justify;"><font color="#000000" face="Georgia, serif" style="font-size: 13px;">The Entity Relationship Diagram is primarily a presentation model. This is a high-level data model that shows the major entities and relationships. Many-to-many relationship is allowed and keys are generally not included.&#160;</font></div>
+<div style="text-align: justify;"><font face="Georgia, serif" style="font-size: 13px;"><br />
+<font color="#000000"></font></font></div>
+<div style="text-align: justify;"><font color="#060a57" face="Georgia, serif" size="2">
+<div style="text-align: justify;"><font color="#000000">The objectives of the ERD are :</font></div>
+<div style="text-align: justify;">
+<ul>
+    <li><font color="#000000">Understand the concept of conceptual database design techniques.&#160;</font></li>
+    <li><font color="#000000">Understand Entity-Relationship notation.&#160;</font></li>
+    <li><font color="#000000">Create an Entity &#8211; Relationship diagram to conceptually represent a database.&#160;</font></li>
+</ul>
+</div>
+</font></div>
+</div>
+<div></div></div><div style="display:block;background-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;" ><div style="font-family: georgia, serif; font-weight: normal;"><img width="570" height="381" alt="" width="570" height="381" src="images/30208270.png"   /></div>
+<div style="font-family: georgia, serif; font-weight: normal;"><br />
+</div>
+<div style="text-align: center;"><font face="Georgia, serif" style="font-size: 13px;">Entity-Relationship Diagram</font></div></div><div style="display:block;" ><font color="#000000"><font face="georgia, serif" style="font-style: normal; font-family: georgia, serif; color: #000000; font-size: 14px; font-weight: normal;"><span style="font-size: 14px;"><b><u><br />
+<br />
+Unified Modeling Language Diagrams (UML Diagrams) with Computer Aided Software Engineering Tools (CASE Tools)</u></b></span></font> </font>
+<div style="font-style: normal; font-family: georgia, serif; color: #000000; font-size: 14px; font-weight: normal;"><font face="georgia, serif"><span style="font-size: 14px;"><b><u><br />
+</u></b></span></font></div>
+<div><font face="georgia, serif">
+<div style="text-align: justify; font-family: georgia, serif; font-size: 14px;"><font color="#000000"><font style="font-family: georgia, serif; font-size: 13px;">UML stands for Unified Modeling Language. It is a modeling language in &#160;object-oriented software engineering. It includes a set of graphic notation techniques to create visual models. UML's structure diagram includes Class diagram, Component diagram, Composite Structure diagram, Deployment diagram, Object diagram&#160;</font><span style="font-size: 13px;"><font style="font-size: 13px;">Package diagram, and Profile diagram.&#160;</font></span></font></div>
+<div style="text-align: justify; font-family: georgia, serif; font-size: 14px;"><font color="#000000"><br />
+</font></div>
+<div style="text-align: justify; font-family: georgia, serif; font-size: 14px;"><font color="#000000" style="font-size: 13px;">The Computer Aided Softer Engineering tools (CASE Tools) &#160;like IBM Rational Rose, Dia, Visio, etc. can be used for UML modeling. In GIS 550, a modeling tool called Dia is used for UML diagram. The objects of UML diagram are:</font></div>
+<div style="font-family: georgia, serif;">
+<ul style="font-size: 14px;">
+    <li style="text-align: justify;"><font color="#000000"><span style="font-size: 13px;">Understand the concept of going from conceptual design to logical design.&#160;</span> </font></li>
+    <li style="text-align: justify;"><font color="#000000"><span style="font-size: 13px;">Understand the purpose and structure of data definition language (DDL).&#160;</span> </font></li>
+    <li style="text-align: justify;"><font color="#000000"><span style="font-size: 13px;">Create and populate a RDBMS database.</span> </font></li>
+</ul>
+<div style="text-align: justify;"><font size="2"><img width="570" height="324" alt="" width="570" height="324" src="images/30633452.png"   /><br />
+</font></div>
+<div style="text-align: justify;"><font size="2"><br />
+</font></div>
+<div style="text-align: center;"><font style="font-size: 13px;">UML Diagram</font></div>
+<div style="text-align: justify;"><font size="2"><br />
+</font></div>
+</div>
+</font></div></div><div style="display:block;" ><font color="#000000"><span style="font-style: normal; font-family: georgia, serif; color: #060a57; font-size: 13px; font-weight: normal;"><font color="#000000" style="font-size: 14px;"><b><u><br />
+Cardinality Concepts</u></b></font></span> </font>
+<div style="font-style: normal; font-family: georgia, serif; color: #000000; font-size: 14px; font-weight: normal;"><span style="color: #060a57; font-size: 13px;"><font style="font-size: 14px;"><b><font style="font-size: 13px;"></font><br />
+</b></font></span></div>
+<div><font face="Georgia, serif" style="color: #060a57; font-size: 13px;">
+<div><font color="#000000">Cardinality is the relational property. It &#160;defines number of &#160;instances appear in a child table for each corresponding instance in the parent table. Different Cardanility descriptions are :</font></div>
+<div><font color="#000000"><br />
+</font></div>
+<div>
+<ul>
+    <li><font color="#000000">One to Zero, One, or More (Mandatory)</font></li>
+    <li><font color="#000000">One to One or More (Mandatory)</font></li>
+    <li><font color="#000000">One to Zero or One (Mandatory)</font></li>
+    <li><font color="#000000">Zero or One to Zero, one or more (Optional)</font></li>
+    <li><font color="#000000">Zero or one to zero or one. (Optional)</font></li>
+</ul>
+</div>
+</font></div></div><div style="display:block;" ><p><font style="font-size: 13px;">Relationship Properties and Referential Integrity</font></p>
+<p><font style="font-size: 13px;">Relationship properties describe constrains on creating, modifying, and deleting instances. Referential integrity ensures that relationships between tables remain consistent during Insert, Update, and Delete operations.</font></p>
+<p><font style="font-size: 13px;">Cardinality :</font></p>
+<p><font style="font-size: 13px;">Cardinality defines number of instances appear in a child table for each corresponding instance in the parent table. </font></p>
+<p><font style="font-size: 13px;">Primary Key:</font></p>
+<p><font style="font-size: 13px;">The primary key uniquely identifies each instance in the entity. It constraints database table for unique identification of the record.</font></p>
+<p><font style="font-size: 13px;">Foreign Key:</font></p>
+<p><font style="font-size: 13px;">Foreign key in one table point to a primary key in another table. It is a referential integrity constraints between parent and child tables.</font> </p></div><div style="display:block;" ><p><strong><font color="#000000">Table Properties </font></strong></p>
+<p><font color="#000000" style="font-size: 13px;">Primary Key (Simple or Composite)</font></p>
+<p style="margin-right: 0px;" dir="ltr"><font color="#000000" style="font-size: 13px;">A primary key is used to uniquely identify each row in a table. A primary key can consist of one or more columns on a table.&#160;<br />
+<br />
+&#160;A simple primary key is made up of a single column only. This is applicable &#160;when a single column is able to identify each record uniquely. There won't be &#160;any null value in this column as well.</font></p>
+<p><font color="#000000" style="font-size: 13px;">When two or more columns fields are used as a primary key, they are called a &#160;composite key. Each single column's data can be duplicated but the combination &#160;values of these columns cannot be duplicated.</font></p>
+<p><font color="#000000" style="font-size: 13px;">Data Types and Properties</font></p>
+<p><font color="#000000" style="font-size: 13px;">The concept of data type is generic to all different databases like Oracle, SQL, PostgreSQL, etc. Generic data types are Character, Numberic, and Date/Time.</font></p></div><div style="display:block;" ><div style="text-align: left;">
+<table align="left" style="text-align: center; width: 546px; height: 441px;" border="1" cellspacing="1" cellpadding="1">
+    <tbody>
+        <tr>
+            <td>&#160;<strong>Data Type&#160;&#160;&#160;</strong></td>
+            <td><strong>Name&#160;</strong></td>
+            <td><strong>&#160;Description</strong></td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Numeric</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">smallint&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">small-range integer&#160;</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Numeric&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">integer&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">typical choice for integer&#160;</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Numeric&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">bigint&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">large-range integer</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Numeric&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">decimal&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">user-specified precision, exact</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Numeric</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">numeric&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">user-specified precision, exact</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Numeric</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">real&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">variable-precision, inexact</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Numeric</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">double precision&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">variable-precision, inexact</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Numeric</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">serial&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">autoincrementing integer</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Numeric</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">bigserial&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">large autoincrementing integer</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Character</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">varchar(n)&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">variable-length with limit</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Character&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">char(n)&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">fixed-length, blank padded</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Character</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">text&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">variable unlimited length</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Date/Time&#160;</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">&#160;timestamp [ (p) ] </font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">both date and time (no time zone)</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Date/Time</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">&#160;timestamp [ (p) ]</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">both date and time, with time zone</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Date/Time</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">&#160;date</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">date (no time of day)</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Date/Time</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">&#160;time [ (p) ] </font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">time of day (no date)</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Date/Time</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">&#160;time [ (p) ] </font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">times of day only, with time zone</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">Date/Time</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">&#160;interval [&#160;fields&#160;] [ (p) ]</font></p>
+            </td>
+            <td>
+            <p style="text-align: left;"><font style="font-size: 13px;">time interval</font></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div></div><div style="display:block;" ><p><font style="font-size: 13px;"><br />
+<br />
+<font color="#000000">Various table&#160;constraint properties are :</font></font><font color="#000000"> </font></p>
+<ul>
+    <li><font color="#000000"><font style="font-size: 13px;"><font style="font-size: 13px;">Not Null</font></font> </font></li>
+    <li><font color="#000000"><font style="font-size: 13px;"><font style="font-size: 13px;">Unique</font></font> </font></li>
+    <li><font color="#000000"><font style="font-size: 13px;"><font style="font-size: 13px;">Primary Key</font></font> </font></li>
+    <li><font color="#000000"><font style="font-size: 13px;"><font style="font-size: 13px;">Foreign Key</font></font> </font></li>
+    <li><font color="#000000"><font style="font-size: 13px;"><font style="font-size: 13px;">Check</font></font> </font></li>
+    <li><font color="#000000"><font style="font-size: 13px;"><font style="font-size: 13px;">Default&#160;</font></font>&#160; </font></li>
+</ul></div><div style="display:block;" ><p><strong><u>Data Definition Language (DDL) </u></strong></p>
+<p style="text-align: justify;"><font style="font-size: 13px;">SQL statements are divided into two major categories: data definition language (DDL) and data manipulation language (DML). A data definition language&#160; is a syntax for defining data structures, especially database schemas.Majot DDL statement types are Create Statement, Drop Statement, and Alter Statement.<br />
+<br />
+<p>Sample of the SQL creating gamefish table:</p>
+<p>create table tbl_gamefish (<br />
+&#160;&#160; unique_site_visit_id varchar(20)&#160; not null,<br />
+&#160;&#160; data_sheet_number&#160;&#160;&#160; integer&#160;&#160;&#160;&#160;&#160; not null,<br />
+&#160;&#160; species_code&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; varchar(20),<br />
+&#160;&#160; run_number&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; integer,<br />
+&#160;&#160; mass_weight&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; numeric(10,2),<br />
+&#160;&#160; notes&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; varchar(255),<br />
+&#160;&#160; constraint pk_tbl_gamefish primary key (unique_site_visit_id,data_sheet_number)<br />
+)&#160;&#160; ;</p>
+</font></p></div><div style="display:block;" ><strong><u>Populated Tabular Database<br />
+<br />
+</u></strong></div><div style="display:block;" ><img width="570" height="392" alt="" width="570" height="392" src="images/32422034.png"   />
+<p style="text-align: center;"><font style="font-size: 13px;">Table Creation after DDL Run </font></p></div><div style="display:block;" ><p style="text-align: justify;"><strong><u><br />
+Reflection</u><br />
+<br />
+</strong><font style="font-size: 13px;">I had database design related learning in my earlier IT learning career. I never had chance to actually design and develop database. In this GIS 550 course work, I went through the database design methodology with enough detail to hands on. <br />
+<br />
+With this in the assignment, I got opportunity to actually work on database design. I used tool called &#8220;Dia&#8221; for development of logical and UML diagram. Using this tool I also generated DDL to generate database schema with tables.&#160; We have provided PostgreSQL database development environment. We actually developed database schema in this development environment. I also broaden my knowledge for Erwin a data modeling tools; and MS SQL Server, and Oracle databases.<br />
+<br />
+Finally, I developed and polish my skills on data modeling, and databases with actual hands on exercises.</font><font style="font-size: 13px;">&#160;</font></p></div></div></div></div></div>
+				</div>
+			</div>
+			<!-- /sf_main_wrapper -->
+		</div>
+		<!-- /sf_main -->
+		<div class="sf_extra12"><span></span></div>
+		<div class="sf_region7">
+			
+		</div>
+		<div class="sf_region8">
+			
+		</div>
+		<!-- 7 -->
+		<div class="sf_extra7"><span></span></div>
+		<div class="sf_region9">
+			<div class="sf_footer" ><div style="display:block;" >Content copyright <script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2011, null, '-')); else document.write((new Date()).getFullYear());</script>. BHARODIA.ME. All rights reserved.</div></div>
+		</div>
+		<div class="sf_extra8"><span></span></div>
+	</div>
+	<!-- /sf_wrapper -->
+	<div class="sf_extra9"><span></span></div>
+</div>
+<!-- /sf_outer_wrapper -->
+<div class="sf_region10">
+	<div class="sf_banner" ><div style="display:block;" ></div></div>
+</div>
+   
+</body>
+</html>

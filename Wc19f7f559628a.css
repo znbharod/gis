@@ -1,0 +1,73 @@
+/**
+ * @project 623
+ * @package sftheme
+ * @site app1
+ */
+
+/**
+ * @colordef	#1e5790, dark blue
+ * @colordef	#6699cc, medium blue
+ * @colordef	#eef3f8, light blue
+ */
+
+a:link {
+	color:#1e5790;
+}
+
+a:visited {
+	color:#1e5790;
+}
+
+a:hover {
+	color:#1e5790;
+}
+
+.sf_header_wrapper {
+	background-color:#1e5790;
+	background-image:url(images/623_header_1.jpg);
+}
+
+.sf_extra2 {
+	background-image:url(images/623_logo_1.jpg);
+}
+
+.sf_footer {
+	background-color:#346ba2;
+	background-image: url(images/623_footer_1.jpg);
+}
+
+/** 
+ * ------------------------------------------------------------------
+ * @section DBNow
+ * ------------------------------------------------------------------
+ */
+
+.Data_Central_color7 {
+	background-color:#0F487F;
+	color:#fff;
+}
+
+.Data_Central_color1 {
+	background-color:#1E5691;
+	color:#fff;
+}
+
+.Data_Central_color2 {
+	background-color:#BFBFBF;
+}
+
+.Data_Central_color3 {
+	background-color:#CFCFCF;
+}
+
+.Data_Central_color6 {
+	background-color:#DFDFDF;
+}
+
+.Data_Central_color4 {
+	background-color:#EFEFEF;
+}
+
+.Data_Central_color5 {
+	border-color:#EFEFEF;
+}

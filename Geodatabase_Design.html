@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Geodatabase Design</title>
+<meta name="description" content="Home Page"/>
+<meta property="og:title" content="Geodatabase Design"/>
+<meta name="title" content="Geodatabase Design"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="http://bharodia.me/Geodatabase_Design.html"/>
+<meta property="og:image" content="http://bharodia.me/images/34912911.png"/>
+<meta property="og:image" content="http://bharodia.me/images/TemplateThumbnail.jpg"/>
+<meta property="og:site_name" content="bharodia"/>
+<meta property="og:description" content="Check out http://bharodia.me!  Home Page"/>
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+<meta http-equiv='Content-Location' content='Geodatabase_Design.html' />
+<meta name="generator" content="Starfield Technologies; WebSite Tonight v5.2.1"/>
+<style type="text/css">
+body { margin:0; padding:0; }
+</style>
+	<script type='text/javascript' src='scripts/Wce6d2746ee82f.js'></script>
+	<script type='text/javascript'>
+		MM_preloadImages('images/34912911.png');
+		MM_preloadImages('images/34912866.png');
+
+	</script>
+
+
+
+
+
+	<script type='text/javascript' src='scripts/Wc154336d0272b.js'></script>
+
+
+
+    <link rel='stylesheet' type='text/css' id='layout1.css' href='Wcc02fe00a3cf8.css' />
+    <link rel='stylesheet' type='text/css' id='theme.css' href='Wc57265438921b.css' />
+    <link rel='stylesheet' type='text/css' id='color_1.css' href='Wc19f7f559628a.css' />
+    <link rel='stylesheet' type='text/css' id='custom.css' href='Wc72afeb1d1546.css' />
+    
+</head>
+<body id='page_0dc292d5-2a51-4215-96cb-ff802bb9e8cc' >
+<div class="sf_outer_wrapper">
+	<div class="sf_region1">
+		
+	</div>
+	<div class="sf_extra1"><span></span></div>
+	<div class="sf_wrapper"><div style='display:block;overflow:visible;margin:0;padding:0;'><div class='sf_undocked' style='display:block;height:0;position:absolute;margin:0;padding:0;overflow:visible;width:0;top:0;z-index:999998;left:auto;'>
+</div></div>
+
+		<div class="sf_region2">
+			
+		</div>
+		<div class="sf_extra10"><span></span></div>
+		<div class="sf_header_wrapper">
+			<div class="sf_extra2"><span></span></div>
+			<div class="sf_region3">
+				<div class="sf_main_header" ><div style="display:block;" ><font face="Arial, Helvetica, sans-serif">Geospatial Information Science and Technology
+</font>
+<div><font style="font-size: 14px; ">GIS 550 - Geospatial Data Structure and Web Services</font></div></div></div>
+			</div>
+			<div class="sf_extra3"><span></span></div>
+		</div>
+		<div class="sf_extra4"><span></span></div>
+		<div class="sf_region4">
+			<div class="sf_navigation" ><div class="widget main_nav"><h3 class="widget_header"><span>Main Navigation</span></h3><div class="widget_content"><div style="display:block;" >
+<ul id="Nav1" class="nav">
+<li class=" sf_first_nav_item"><a href="Home_Page.html" target="_self" onclick="">Home Page</a></li>
+<li class=""><a href="Database_Design.html" target="_self" onclick="">Database Design</a></li>
+<li class=""><a href="Structured_Query_Languag.html" target="_self" onclick="">Structured Query Languag</a></li>
+<li class="active-nav"><a href="Geodatabase_Design.html" target="_self" onclick="">Geodatabase Design</a></li>
+<li class=""><a href="Commercial_Web_Delivery.html" target="_self" onclick="">Commercial Web Delivery</a></li>
+<li class=""><a href="Open_Source_GIS.html" target="_self" onclick="">Open Source GIS</a></li>
+<li class=" sf_last_nav_item"><a href="Capstone_Project.html" target="_self" onclick="">Capstone Project</a></li>
+</ul>
+</div></div></div></div>
+		</div>
+		<div class="sf_extra5"><span></span></div>
+		<div class="sf_region5">
+			<div class="sf_pagetitle" ><div style="display:block;" ><h1>Geodatabase Design</h1></div></div>
+		</div>
+		<div class="sf_extra6"><span></span></div>
+		<div class="sf_extra11"><span></span></div>
+		<div class="sf_main_wrapper">
+			<div class="sf_main">
+				<div class="sf_region6">
+					<div class="sf_content" ><div style="display:block;zoom:1" ><div id="content1"><div style="display:block;" ><div style="display:block;" ><p style="text-align: justify;"><font color="#000000" style="font-size: 13px;">The geodatabase is the common data storage and management framework for ArcGIS. It combines "geo" (spatial data) with "database" (data repository) to create a central data repository for spatial data storage and management. It can be leveraged in desktop, server, or mobile environments and allows you to store GIS data in a central location for easy access and management.<br />
+<br />
+&#160;&#160;&#160;&#160;Feature datasets and feature classes<br />
+&#160;&#160;&#160;&#160;Topological concepts<br />
+&#160;&#160;&#160;&#160;Single-User geodatabases<br />
+&#160;&#160;&#160;&#160;Multi-User geodatabases</font></p></div><div style="display:block;" ><p style="line-height: normal; margin: 0in 0in 10pt;"><span style="font-size: 12pt;"><strong><font style="font-size: 14px;"><u>Feature Datasets and Feature Classes<br />
+</u><br />
+</font></strong><font color="#000000"><font style="font-size: 13px;">Feature Dataset</font> </font>
+<p style="text-align: justify;"><font color="#000000" style="font-size: 13px;">Feature datasets are objects that allow you to group together related feature classes.The feature dataset has collection of feature classes stored together that share the same spatial reference. Feature classes in a feature dataset share a coordinate system, and their features fall within a common geographic area. Feature datasets are used to help model spatial relationships between feature classes.</font></p>
+<p style="text-align: justify;"><font color="#000000" style="font-size: 13px;">Feature Class</font></p>
+<p style="text-align: justify;"><font color="#000000" style="font-size: 13px;">Feature classes are homogeneous collections of common features, each having the same spatial representation, such as points, lines, or polygons, and a common set of attribute columns, for example, a line feature class for representing road centerlines. The four most commonly used feature classes in the geodatabase are points, lines, polygons, and annotation.</font></p>
+</span></p></div><div style="display:block;" ><p><strong><u>Topological Concepts</u></strong></p>
+<p style="text-align: justify;"><font style="font-size: 13px;">In a GIS, topology is a set of rules which define the relationship between points, lines, and polygons. Topological or topology-based data are useful for detecting and correcting digitizing errors, e.g. two lines in a roads vector layer that do not meet perfectly at an intersection. Folloing is the link for topology rules poster:</font></p>
+<p><a href="http://help.arcgis.com/en/arcgisdesktop/10.0/help/001t/pdf/topology_rules_poster.pdf"><font style="font-size: 13px;">http://help.arcgis.com/en/arcgisdesktop/10.0/help/001t/pdf/topology_rules_poster.pdf</font></a></p>
+<p style="text-align: justify;"><font style="font-size: 13px;">Many toplogical Relationship between A and B can be specified using 9 intersection model. Nine intersections are:</font></p>
+<font style="font-size: 13px;">
+<ul>
+    <li>
+    <p><font style="font-size: 13px;">Intersections between interior, boundary, exterior of A, B.
+    <li>A and B are spatial objects in a two dimensional plane. </li>
+    <li>Can be arranged as a 3 by 3 matrix. </li>
+    <li>Matrix element take a value of 0 (false) or 1 (true).&#160;
+    <p>&nbsp;</p>
+    </li>
+    </font></p>
+    </li>
+</ul>
+</font></div><div style="display:block;" ><p><strong><u>Single-User Geodatabases</u></strong></p>
+<p style="text-align: justify;"><font style="font-size: 13px;">The single-user geodatabase is for individual GIS work in a desktop environment. It is available as either the file geodatabase or the Microsoft Access personal geodatabase.<br />
+<p style="text-align: center;"><img alt="" src="images/34912911.png"   /><br />
+Single-User Geodabase<br />
+<br />
+</p>
+<p style="text-align: justify;">File geodatabases&#160; are recommended as the primary format for data in a file system folder going forward. File geodatabases have the ability to handle far larger datasets (1 TB per dataset) than personal geodatabases and expected to be more stable and possibly faster.</p>
+<p style="text-align: justify;">Personal geodatabase is original data format for ArcGIS geodatabases stored and managed in Microsoft Access data files. Personal geodatabases have limitations on size (2 GB) and stability.&#160;</p>
+</font></p></div><div style="display:block;" ><p><strong><u>Multi-User Geodatabases</u></strong></p>
+<p style="text-align: justify;"><font style="font-size: 13px;">The multiuser geodatabase uses ArcSDE technology and a relational database management system (RDBMS) to store large amounts of GIS data. ArcSDE geodatabases stored in a relational database using Oracle, Microsoft SQL Server, IBM DB2, IBM Informix, or PostgreSQL. These multiuser geodatabases and can be unlimited in size and numbers of users.<br />
+<br />
+<p style="text-align: center;"><img alt="" src="images/34912866.png"   /></p>
+<p style="text-align: center;">Multi-User Geodabase&#160;</p>
+</font></p></div><div style="display:block;" ><p style="text-align: justify;"><font style="font-size: 13px;"><strong><font style="font-size: 13px;"><u>Reference/Source:<br />
+</u></font></strong><br />
+<font style="font-size: 13px;">The geodatabase is the common data storage and management framework for ArcGIS. The all above information is referenced from </font></font><a href="http://www.esri.com"><font style="font-size: 13px;">www.esri.com</font></a><font style="font-size: 13px;"><font style="font-size: 13px;">&#160;</font> </font></p></div><div style="display:block;" ><p><span style="color: black; font-size: 10pt;"><strong><font style="font-size: 14px;"><u>Reflection</u></font></strong></span></p>
+<p style="text-align: justify;"><span style="color: black; font-size: 10pt;"><font style="font-size: 13px;">I worked with ArcGIS tools in my earlier course works for Masters in Geographic Science and Technology program. I had understanding about spatial data but never understood how this spatial data stored in the database and surface through ArcGIS tools. After I learned Geodatabase in this course, now concept of how spatial data store and display through ArcGIS is clear to me.&#160; Now I clearly understand Single User and Multi User Geodatabases. The concept of Feature Dataset is also clear to me as well. </font></span></p></div></div></div></div></div>
+				</div>
+			</div>
+			<!-- /sf_main_wrapper -->
+		</div>
+		<!-- /sf_main -->
+		<div class="sf_extra12"><span></span></div>
+		<div class="sf_region7">
+			
+		</div>
+		<div class="sf_region8">
+			
+		</div>
+		<!-- 7 -->
+		<div class="sf_extra7"><span></span></div>
+		<div class="sf_region9">
+			<div class="sf_footer" ><div style="display:block;" >Content copyright <script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2011, null, '-')); else document.write((new Date()).getFullYear());</script>. BHARODIA.ME. All rights reserved.</div></div>
+		</div>
+		<div class="sf_extra8"><span></span></div>
+	</div>
+	<!-- /sf_wrapper -->
+	<div class="sf_extra9"><span></span></div>
+</div>
+<!-- /sf_outer_wrapper -->
+<div class="sf_region10">
+	<div class="sf_banner" ><div style="display:block;" ></div></div>
+</div>
+   
+</body>
+</html>
